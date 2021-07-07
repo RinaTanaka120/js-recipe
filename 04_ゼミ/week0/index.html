@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display">こんにちは</div>
+    <button id="button">ここをクリック</button>
+    <div id="number">0</div>
+    <button id="plus">+1</button>
+    <script>
+      const display = document.getElementById("display")
+      const button = document.getElementById("button")
+      const number = document.getElementById("number")
+      const plus = document.getElementById("plus")
+      button.onclick = function() {
+        display.textContent = "こんばんは"
+      }
+      let num = 0
+      plus.onclick = function() {
+        num = num + 1
+        number.textContent = num
+      }
+    </script>
+  </body>
+</html>
